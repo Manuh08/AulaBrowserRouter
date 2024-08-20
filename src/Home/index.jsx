@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Header from "./components/Header";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -44,5 +45,16 @@ export default function Home() {
 
             <Footer/>
         </>
+=======
+import Header from "../../components/Header";
+
+export default function Home(){
+    return(
+        <>
+        <Header/>
+        <p>Minha Home</p>
+        </>
+        
+>>>>>>> 0ed2b0abfc6a7ed304cee3bbb595c1b7b0052d09
     );
 }
