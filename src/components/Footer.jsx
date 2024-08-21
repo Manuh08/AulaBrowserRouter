@@ -1,7 +1,7 @@
-export default function Footer() {
+export default function Footer({Creditos}) {
     return(
         <footer>
-            @ Manuela Soares Pacheco. Todos os direitos são reservados
+            @ Feito Por {Creditos}. Todos os direitos são reservados
         </footer>
     );
 }
