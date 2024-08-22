@@ -64,7 +64,7 @@ export default function Produtos() {
   return (
     <>
     <Header titulo={"Meu mundo"}/>
-<listarProduto Produtos={listarProduto}/>
+<listarProduto Produtos={listaProdutos}/>
     
   
     <Footer desenvolvedor={"Manuela"}/>
