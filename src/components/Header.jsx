@@ -6,7 +6,7 @@ export default function Header(){
        <>
         <header>
             <Link to= "/">
-            <h1 class='header-link'>Home</h1>
+            <h1 class='header-link'>Homer</h1>
             </Link> 
 
             <Link to= "/oferta">
