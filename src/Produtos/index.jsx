@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import "../global.css";
 import ListarProduto from "../components/ListarProduto";
 
 export default function Produtos() {

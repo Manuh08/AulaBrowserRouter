@@ -1,5 +1,6 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import '../global.css';
 import { useState } from "react";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -69,52 +70,18 @@ export default function Home() {
                 showThumbs={false}
                 dynamicHeight
              >
+                
                 <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTy3H0RwB7s-AvdvKiVeD7REoTQllyzKOAg&s" alt="Slide 1" />
+                    <img class="carousel" src="https://static3.tcdn.com.br/img/img_prod/449226/1617281209_banner_berloques.jpg" alt="Slide 2" />
                 </div>
                 
                 <div>
-                    <img src="https://images.tcdn.com.br/img/img_prod/1195965/anel_de_prata_ondas_aro_fino_design_moderno_e_fluido_para_combinacoes_cheias_de_estilo_31391_1_abdf3cbdfd9f16affa084dc00f93ecfc.jpg" alt="Slide 2" />
+                    <img class="carousel" src="https://static3.tcdn.com.br/img/img_prod/449226/1617281927_banner_personalizados.jpg" alt="Slide 3" />
                 </div>
+
                 
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA7pk9fYFdRi6d_sc3AumiktulEU9BFN1G4Q&s" alt="Slide 3" />
-                </div>
 
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWuZkJ6x3hwhWW6xuYGkzY80Kl8R0ApYDqtQ&s" alt="Slide 4" />
-                </div>
-
-                <div>
-                    <img src="https://images.tcdn.com.br/img/img_prod/1195965/colar_de_prata_coracao_colorido_cravejado_beleza_e_sofisticacao_em_uma_joia_unica_39101_1_fd1f7e26304e11f0d3bf172697401b60.jpg" alt="Slide 5" />
-                </div>
-      
             </Carousel>
-         <div>
-
- {
-listaProdutos.map((produto)=>
-<div key={produto.id}>
-<p>{produto.nome}</p>
-<img src={produto.imagem}/>
-<p>{produto.descrição}</p>
-<p>{produto.preco}</p>
-<button onClick={()=> adicionarItemPedidos(produto)}>Selecionar</button>
-</div>
-)
- }
-
- {
-  listaPedidos.map((produto)=>
-  <div key={produto.id}>
-  <p>{produto.nome}</p>
-  <p>{produto.preco}</p>
-  <button onClick={()=> removerPedido(produto.id)}>Remover</button>
-  </div>
-  )
- }
-</div>
-        
         
             <Footer Creditos={"Manuela Soares Pacheco"}/>
         </>

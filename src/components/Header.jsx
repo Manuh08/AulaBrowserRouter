@@ -6,15 +6,15 @@ export default function Header(){
        <>
         <header>
             <Link to= "/">
-            <p>Home</p>
+            <h1 class='header-link'>Home</h1>
             </Link> 
 
             <Link to= "/oferta">
-            <p>Ofertas</p>
+            <h1 class='header-link'>Ofertas</h1>
             </Link> 
 
             <Link to= "/produtos">
-            <p>Produtos</p>
+            <h1 class='header-link'>Produto</h1>
             </Link> 
 
         </header>
