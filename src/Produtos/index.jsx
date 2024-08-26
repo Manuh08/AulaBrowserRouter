@@ -2,11 +2,11 @@ import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../global.css";
-import ListarProduto from "../components/ListarProduto";
+import ListarProdutos from "../components/ListarProduto";
 
 export default function Produtos() {
   const [listaProdutos, setProdutos] = useState([
-    
+  
     { id: 1, 
       nome: 'Anel', preco: 'R$129,90 ', 
       imagem:"https://images.tcdn.com.br/img/img_prod/1195965/anel_de_prata_aro_torcido_e_cravejado_28202_1_d7cb122fd11b7e5d3811df29e7a6956c_20230329091701.jpg",
@@ -65,7 +65,7 @@ export default function Produtos() {
   return (
     <>
     <Header titulo={"Meu mundo"}/>
-<listarProduto Produtos={listaProdutos}/>
+<ListarProdutos Produtos={listaProdutos}/>
     
   
     <Footer desenvolvedor={"Manuela"}/>

@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../global.css';
+import ListarProdutos from '../components/ListarProduto';
 import { useState } from "react";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -82,7 +83,8 @@ export default function Home() {
                 
 
             </Carousel>
-        
+            <ListarProdutos Produtos={listaProdutos}/>
+    
             <Footer Creditos={"Manuela Soares Pacheco"}/>
         </>
     );

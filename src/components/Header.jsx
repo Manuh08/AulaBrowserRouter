@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export default function Header(){
     return(
        <>
-        <header>
+        <header class="hed">
             <Link to= "/">
-            <h1 class='header-link'>Homer</h1>
+            <h1 class='header-link'>Home</h1>
             </Link> 
 
             <Link to= "/oferta">
@@ -14,7 +14,7 @@ export default function Header(){
             </Link> 
 
             <Link to= "/produtos">
-            <h1 class='header-link'>Produto</h1>
+            <h1 class='header-link'>Produtos</h1>
             </Link> 
 
         </header>
