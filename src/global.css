@@ -61,3 +61,6 @@ footer{
 footer p{
    font-size: 10px;
 }
+.riscado{
+    text-decoration: line-through;
+}
