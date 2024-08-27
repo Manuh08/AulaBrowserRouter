@@ -5,8 +5,9 @@ export default function Header(){
     return(
        <>
         <header class="hed">
+            <ul>
             <Link to= "/">
-            <h1 class='header-link'>Homer</h1>
+            <h1 class='header-link'>Home</h1>
             </Link> 
 
             <Link to= "/oferta">
@@ -16,7 +17,7 @@ export default function Header(){
             <Link to= "/produtos">
             <h1 class='header-link'>Produtos</h1>
             </Link> 
-
+            </ul>
         </header>
         </>
     );
